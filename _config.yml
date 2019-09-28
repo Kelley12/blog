@@ -18,13 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: All Puns Indented Blog
+title: AllPunsIndented Blog
 email: blake.t.kelley@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A Blog for all things tech and whatever else comes to mind.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.allpunsindented.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+baseurl: "" # subpath of your site, e.g. /blog
+url: "http://blog.allpunsindented.com" # base hostname & protocol, e.g. http://example.com
 github_username:  Kelley12
 
 # Build settings
