@@ -28,7 +28,7 @@ twitter_username:
 github_username:  Kelley12
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
 
