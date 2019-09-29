@@ -28,6 +28,7 @@ github_username:  Kelley12
 
 # Build settings
 theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack
 plugins:
   - jekyll-feed
 
