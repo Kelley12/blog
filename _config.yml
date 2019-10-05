@@ -33,6 +33,10 @@ plugins:
   - jekyll-feed
 
 # Theme settings
+menu:
+  - title: "Blake Kelley"
+    url:   https://bkelley.dev/
+
 accent_image: /assets/blog-bg.jpeg
 
 # Exclude from processing.
