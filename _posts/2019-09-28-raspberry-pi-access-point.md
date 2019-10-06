@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "Raspberry Pi Access Point"
+layout: post
 date: 2019-09-28 11:02:52 -0600
 categories: blog
+image: /assets/blog/rasp-pi-access-point.png
+description: >
+  Setting up an Access Point on a Raspberry Pi
 ---
-# Raspberry Pi Access Point Setup
 
 - [Prerequisites](#prerequisites)
   - [Update System](#update-system)
