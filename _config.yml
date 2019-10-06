@@ -32,6 +32,7 @@ theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Theme settings
 menu:
@@ -41,9 +42,15 @@ menu:
 accent_image: /assets/blog-bg.jpeg
 
 author:
+  name: Blake Kelley
+  email: blake.t.kelley@gmail.com
   social:
     github: Kelley12
     email:  blake.t.kelley@gmail.com
+
+# Blog pagination
+paginate:      5
+paginate_path: '/page-:num/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
