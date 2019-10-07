@@ -28,7 +28,6 @@ url: "http://blog.allpunsindented.com" # base hostname & protocol, e.g. http://e
 google_analytics: UA-149425761-1
 
 # Build settings
-theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack
 plugins:
   - jekyll-feed
