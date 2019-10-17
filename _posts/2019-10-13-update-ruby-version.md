@@ -5,7 +5,7 @@ date: 2019-10-13 1:32:42 -0600
 categories: posts
 image: /assets/posts/ruby-version.png
 description: >
-  Update Ruby to latest of specified version
+  Update Ruby to latest or specified version
 ---
 
 - [Check that Ruby is installed](#check-that-ruby-is-installed)
