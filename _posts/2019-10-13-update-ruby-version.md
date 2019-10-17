@@ -8,6 +8,11 @@ description: >
   Update Ruby to latest of specified version
 ---
 
+- [Check that Ruby is installed](#check-that-ruby-is-installed)
+- [Install the Ruby Version Manager](#install-the-ruby-version-manager)
+- [Install the Desired Ruby Version](#install-the-desired-ruby-version)
+- [Set the Version of Ruby in RVM](#set-the-version-of-ruby-in-rvm)
+
 ## Check that Ruby is installed
 
 Open a terminal and type the following command. This should give you the latest version if Ruby is installed or a `command not found` error if it is not.
