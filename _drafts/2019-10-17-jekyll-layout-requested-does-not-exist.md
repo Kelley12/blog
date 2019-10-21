@@ -11,6 +11,7 @@ description: >
 - [The Problem](#the-problem)
 - [Verbose Build](#verbose-build)
 - [Check Theme _layouts folder](#check-theme-_layouts-folder)
+- [Updating Jekyll](#updating-jekyll)
 
 ## The Problem
 
@@ -28,6 +29,7 @@ In order to try and figure out what was causing the error, I followed the follow
 
 1. [Run the build with verbosity](#verbose-build)
 2. [Check theme _layouts folder](#check-theme-_layouts-folder)
+3. [Updating Jekyll to the latest supported version](#updating-jekyll)
 
 ## Verbose Build
 
@@ -101,3 +103,17 @@ base.html       compress.html   home.html       not-found.html  post.html
 ```
 
 As we can see, the build warnings for the missing themes `default`, `blog`, and `post` do exist in the themes _layouts folder.
+
+## Updating Jekyll
+
+Just to verify that this wasn't a versioning issue or something like that, I updated to the latest version of jekyll supported by GitHub pages (found [here](https://pages.github.com/versions/)).
+
+```bash
+# Check the currently installed version of jekyll
+bundle exec jekyll -v
+
+# Update the gem to the latest supported version (3.8.5 in my case)
+gem install jekyll -v 3.8.5
+```
+
+Unfortunately, this did not solve my problem.
