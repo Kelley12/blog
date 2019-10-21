@@ -9,8 +9,8 @@ description: >
 ---
 
 - [The Problem](#the-problem)
-- [Check Theme _layouts folder](#check-theme-_layouts-folder)
 - [Verbose Build](#verbose-build)
+- [Check Theme _layouts folder](#check-theme-_layouts-folder)
 
 ## The Problem
 
@@ -21,6 +21,13 @@ Build Warning: Layout 'post' requested in _posts/2019-10-17-jekyll-layout-reques
 Build Warning: Layout 'default' requested in 404.html does not exist.
 Build Warning: Layout 'blog' requested in index.html does not exist.
 ```
+
+While this may only a warning, this breaks the site entirely. Because it cannot find the Layout, the pages are either just plain content or in the case of `index.html`, a blank page.
+
+In order to try and figure out what was causing the error, I followed the following steps:
+
+1. [Run the build with verbosity](#verbose-build)
+2. [Check theme _layouts folder](#check-theme-_layouts-folder)
 
 ## Verbose Build
 
@@ -79,7 +86,7 @@ This unfortunately didn't help point out any issues.
 
 ## Check Theme _layouts folder
 
-The next step was to check that the theme actually contains these layouts. In order to do so run the following command and replacing `[theme-gem]` with the theme gem you are using in `Gemfile`. If you're using minima, replace it with `minima`.
+The next step was to check that the theme actually contains the requested layouts. In order to do so run the following command and replacing `[theme-gem]` with the theme gem you are using in `Gemfile`. If you're using minima, replace it with `minima`.
 
 ```bash
 ls $(bundle show [theme-gem])/_layouts/
