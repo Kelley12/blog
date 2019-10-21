@@ -12,6 +12,7 @@ description: >
 - [Verbose Build](#verbose-build)
 - [Check Theme _layouts folder](#check-theme-_layouts-folder)
 - [Updating Jekyll](#updating-jekyll)
+- [Validate Ruby Version](#validate-ruby-version)
 
 ## The Problem
 
@@ -30,6 +31,7 @@ In order to try and figure out what was causing the error, I followed the follow
 1. [Run the build with verbosity](#verbose-build)
 2. [Check theme _layouts folder](#check-theme-_layouts-folder)
 3. [Updating Jekyll to the latest supported version](#updating-jekyll)
+4. [Validate Ruby Version](#validate-ruby-version)
 
 ## Verbose Build
 
@@ -117,3 +119,28 @@ gem install jekyll -v 3.8.5
 ```
 
 Unfortunately, this did not solve my problem.
+
+## Validate Ruby Version
+
+Made sure that the version of Ruby that was installed was up to date, supported by GitHub pages, and being used by RVM (Ruby Version Manager).
+
+1. Check that the most recent, [GitHub Pages](https://pages.github.com/versions/) supported version of Ruby is installed. If not, use [these instructions to install the latest version](http://blog.allpunsindented.com/posts/2019/10/13/update-ruby-version.html).
+2. Set the latest version as the default version
+
+```bash
+# Check currently installed Ruby version
+ruby -v
+
+# Make sure RVM is using the latest version
+rvm --default use ruby-[version]
+
+# Refresh rvm in the terminal
+source ~/.rvm/scripts/rvm
+
+# Install gems and try again
+bundle install
+bundle exec jekyll serve
+```
+
+Unfortunately for me I had the latest version installed and used by RVM.
+
