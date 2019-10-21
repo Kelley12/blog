@@ -53,5 +53,5 @@ description: >
 export
 
     ```bash
-    CHASE_ACCESS_TOKEN='access-development-mysecrettoken'
+    export CHASE_ACCESS_TOKEN='access-development-mysecrettoken'
     ```
