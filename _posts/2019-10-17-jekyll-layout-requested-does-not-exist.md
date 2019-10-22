@@ -25,7 +25,7 @@ Build Warning: Layout 'default' requested in 404.html does not exist.
 Build Warning: Layout 'blog' requested in index.html does not exist.
 ```
 
-While this may only a warning, this breaks the site entirely. Because it cannot find the Layout, the pages are either just plain content or in the case of `index.html`, a blank page.
+While these may only be warnings, this breaks the site entirely. Because it cannot find the Layout, the pages are either just plain content or in the case of `index.html` a blank page.
 
 In order to try and figure out what was causing the error, I followed the following steps:
 
