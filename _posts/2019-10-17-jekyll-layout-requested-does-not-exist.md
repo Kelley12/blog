@@ -14,6 +14,8 @@ description: >
 - [Check Theme _layouts folder](#check-theme-_layouts-folder)
 - [Updating Jekyll](#updating-jekyll)
 - [Validate Ruby Version](#validate-ruby-version)
+- [Reinstall Jekyll](#reinstall-jekyll)
+- [Thoroughly Inspect _config.yml](#thoroughly-inspect-_config.yml)
 
 ## The Problem
 
@@ -36,6 +38,8 @@ In order to try and figure out what was causing the error, I followed the follow
 3. [Check theme _layouts folder](#check-theme-_layouts-folder)
 4. [Updating Jekyll to the latest supported version](#updating-jekyll)
 5. [Validate Ruby Version](#validate-ruby-version)
+6. [Reinstall Jekyll](#reinstall-jekyll)
+7. [Thoroughly Inspect _config.yml](#thoroughly-inspect-_config.yml)
 
 ## Verify Build From Root Directory
 
@@ -151,3 +155,49 @@ bundle exec jekyll serve
 ```
 
 Unfortunately for me I had the latest version installed and used by RVM.
+
+## Reinstall Jekyll
+
+Unlikely that this was the issue, but I had to ask myself "Have you tried turning it off and back on again". So I tried uninstalling and reinstalling Jekyll.
+
+```bash
+gem uninstall jekyll
+
+# If you don't have permissions
+sudo gem uninstall jekyll
+```
+
+If you have multiple versions of Jekyll installed, you will be prompted to select which version to uninstall.
+
+```bash
+Select gem to uninstall:
+ 1. jekyll-3.8.5
+ 2. jekyll-3.8.6
+ 3. jekyll-4.0.0
+ 4. All versions
+>
+```
+
+Once all versions of jekyll were uninstalled, I attempted to reinstall it to the latest [GitHub Pages](https://pages.github.com/versions/) supported version.
+
+```bash
+gem install jekyll -v 3.8.5
+```
+
+As suspected, this did not fix my issue, but was worth a try.
+
+## Thoroughly Inspect _config.yml
+
+Running out of options for what could have gone wrong, I looked to things that I may have changed and didn't realize. While all of the gems seemed to be working right, I looked to the `_config.yml` file as it handles the theme and build settings.
+
+For me, I am using a remote theme which requires a `remote_theme` property that specifies the theme repo:
+
+```bash
+remote_theme: hydecorp/hydejack
+```
+
+In my ignorance, I must have assumed that the `theme` property was no longer required and removed it. Unfortunately the build still worked without issue and only threw the error discussed in this post. I looked at adding this back in a couple times through debugging but kept adding in the repo name instead of the theme name itself. After adding back in the theme name, everything worked as expected, lesson learned the hard way.
+
+```bash
+theme: jekyll-theme-hydejack
+```
