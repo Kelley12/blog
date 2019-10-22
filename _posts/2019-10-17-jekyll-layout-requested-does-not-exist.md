@@ -27,6 +27,8 @@ Build Warning: Layout 'blog' requested in index.html does not exist.
 
 While these may only be warnings, this breaks the site entirely. Because it cannot find the Layout, the pages are either just plain content or in the case of `index.html` a blank page.
 
+***Note: This is only breaking on my local instance, GitHub pages still builds and renders everything without issue***
+
 In order to try and figure out what was causing the error, I followed the following steps:
 
 1. [Verify Build From Root Directory](#verify-build-from-root-directory)
