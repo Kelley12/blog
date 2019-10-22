@@ -9,6 +9,7 @@ description: >
 ---
 
 - [The Problem](#the-problem)
+- [Verify Build From Root Directory](#verify-build-from-root-directory)
 - [Verbose Build](#verbose-build)
 - [Check Theme _layouts folder](#check-theme-_layouts-folder)
 - [Updating Jekyll](#updating-jekyll)
@@ -28,10 +29,15 @@ While this may only a warning, this breaks the site entirely. Because it cannot 
 
 In order to try and figure out what was causing the error, I followed the following steps:
 
-1. [Run the build with verbosity](#verbose-build)
-2. [Check theme _layouts folder](#check-theme-_layouts-folder)
-3. [Updating Jekyll to the latest supported version](#updating-jekyll)
-4. [Validate Ruby Version](#validate-ruby-version)
+1. [Verify Build From Root Directory](#verify-build-from-root-directory)
+2. [Run the build with verbosity](#verbose-build)
+3. [Check theme _layouts folder](#check-theme-_layouts-folder)
+4. [Updating Jekyll to the latest supported version](#updating-jekyll)
+5. [Validate Ruby Version](#validate-ruby-version)
+
+## Verify Build From Root Directory
+
+Some Jekyll users were experiencing this issue if building or serving Jekyll from a directory other than the root directory of the project (e.g. /posts). Verify that you are in the root directory. This was not my issue.
 
 ## Verbose Build
 
@@ -143,4 +149,3 @@ bundle exec jekyll serve
 ```
 
 Unfortunately for me I had the latest version installed and used by RVM.
-
