@@ -190,7 +190,7 @@ As suspected, this did not fix my issue, but was worth a try.
 
 Running out of options for what could have gone wrong, I looked to things that I may have changed and didn't realize. While all of the gems seemed to be working right, I looked to the `_config.yml` file as it handles the theme and build settings.
 
-For me, I am using a remote theme which requires a `remote_theme` property that specifies the theme repo:
+For me, I am using a remote theme which requires a `remote_theme` configuration variable that specifies the theme repo:
 
 ```bash
 remote_theme: hydecorp/hydejack
@@ -208,7 +208,7 @@ For information on troubleshooting Jekyll see:
   https://help.github.com/articles/troubleshooting-jekyll-builds
 ```
 
-In my ignorance, I must have assumed that the `theme` property was no longer required because of this and removed it. Unfortunately the build in GitHub still worked and rendered without issue. I looked at adding this back in a couple times through debugging but kept adding in the repo name instead of the theme name itself. After adding back in the theme name, everything worked as expected, lesson learned the hard way.
+In the link [Adding a theme to your GitHub pages site using Jekyll](https://help.github.com/en/articles/adding-a-theme-to-your-github-pages-site-using-jekyll) above, it has you replace the  `theme` configuration variable with the `remote_theme` configuration variable. Unfortunately the build in GitHub still worked and rendered without issue. I looked at adding this back in a couple times through debugging but kept adding in the repo name instead of the theme name itself. After adding back in the theme name, everything worked as expected, lesson learned the hard way.
 
 ```bash
 theme: jekyll-theme-hydejack
