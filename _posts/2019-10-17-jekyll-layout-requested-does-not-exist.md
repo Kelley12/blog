@@ -196,7 +196,19 @@ For me, I am using a remote theme which requires a `remote_theme` property that 
 remote_theme: hydecorp/hydejack
 ```
 
-In my ignorance, I must have assumed that the `theme` property was no longer required and removed it. Unfortunately the build still worked without issue and only threw the error discussed in this post. I looked at adding this back in a couple times through debugging but kept adding in the repo name instead of the theme name itself. After adding back in the theme name, everything worked as expected, lesson learned the hard way.
+When I was committing code for the blog, I was getting these error messages from github:
+
+```text
+The page build completed successfully, but returned the following warning for the `master` branch:
+
+You are attempting to use a Jekyll theme, "jekyll-theme-hydejack", which is not supported by GitHub Pages. Please visit https://pages.github.com/themes/ for a list of supported themes. If you are using the "theme" configuration variable for something other than a Jekyll theme, we recommend you rename this variable throughout your site. For more information, see https://help.github.com/en/articles/adding-a-theme-to-your-github-pages-site-using-jekyll.
+
+For information on troubleshooting Jekyll see:
+
+  https://help.github.com/articles/troubleshooting-jekyll-builds
+```
+
+In my ignorance, I must have assumed that the `theme` property was no longer required because of this and removed it. Unfortunately the build in GitHub still worked and rendered without issue. I looked at adding this back in a couple times through debugging but kept adding in the repo name instead of the theme name itself. After adding back in the theme name, everything worked as expected, lesson learned the hard way.
 
 ```bash
 theme: jekyll-theme-hydejack
