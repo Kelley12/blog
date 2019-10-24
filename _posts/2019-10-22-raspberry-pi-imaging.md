@@ -1,5 +1,6 @@
 ---
 title: "Raspberry Pi Imaging"
+author: bkelley
 layout: post
 date: 2019-10-22 10:56:42 -0600
 categories: posts

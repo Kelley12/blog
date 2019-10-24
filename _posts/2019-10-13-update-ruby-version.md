@@ -1,5 +1,6 @@
 ---
 title: "Update Ruby Version"
+author: bkelley
 layout: post
 date: 2019-10-13 1:32:42 -0600
 categories: posts

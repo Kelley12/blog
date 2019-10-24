@@ -1,5 +1,6 @@
 ---
 title: "Financial Predictions"
+author: jreitz
 layout: post
 date: 2019-11- :: -0600
 categories: posts

@@ -1,5 +1,6 @@
 ---
 title: "S.O.L.I.D: Object Oriented Design"
+author: bkelley
 layout: post
 date: 2019-10- 10:50:42 -0600
 categories: posts
