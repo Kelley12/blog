@@ -1,0 +1,37 @@
+# The primary author of this blog.
+# Must be the same as `author` in `_config.yml`.
+bkelley:
+  name: Blake Kelley
+  email: blake.t.kelley@gmail.com
+
+  # Used at the bottom of each page and at the top of the `about` layout
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about: |
+    # Blake Kelley
+    Software Engineer
+
+  # Social media icons in sidebar
+  # Comment/uncommet to show/hide
+  # Rearrange to change the order in which they appear
+  social:
+    github: Kelley12
+    email:  blake.t.kelley@gmail.com
+
+# Secondary author, to use in a post:
+# author: jreitz
+jreitz:
+  name: Jessica Reitz
+  email: jreitz43@gmail.com
+
+  # Used at the bottom of each page and at the top of the `about` layout
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about: |
+    # Jessica Reitz
+    Business Intelligence Developer
+  
+  # Social media icons in sidebar
+  # Comment/uncommet to show/hide
+  # Rearrange to change the order in which they appear
+  social:
+    github: jreitz43
+    email:  jreitz43@gmail.com

@@ -38,15 +38,14 @@ plugins:
 menu:
   - title: "Blake Kelley"
     url:   https://bkelley.dev/
+  - title: "Jessica Reitz"
+    url:   https://jreitz.dev/
 
 accent_image: /assets/blog-bg.jpeg
 
 author:
   name: Blake Kelley
   email: blake.t.kelley@gmail.com
-  social:
-    github: Kelley12
-    email:  blake.t.kelley@gmail.com
 
 # Blog pagination
 paginate:      5
