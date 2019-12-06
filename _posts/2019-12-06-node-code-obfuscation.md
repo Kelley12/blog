@@ -9,6 +9,8 @@ description: >
   Obfuscating node.js code as a binary
 ---
 
+Step by step guide to set up pkg to compile your node.js code into a binary file.
+
 1. Install [pkg](https://www.npmjs.com/package/pkg) (this guide assumes version 4.3.8):
 
    ```bash
