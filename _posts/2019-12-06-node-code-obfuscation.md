@@ -2,11 +2,11 @@
 title: "Obfuscating NodeJS Code"
 author: bkelley
 layout: post
-date: 2019-- ::00 -0600
+date: 2019-12-06 2:18:00 -0600
 categories: posts
-image: /assets/posts/.png
+image: /assets/posts/node-code-obfuscation.png
 description: >
-  
+  Obfuscating node.js code as a binary
 ---
 
 1. Install [pkg](https://www.npmjs.com/package/pkg) (this guide assumes version 4.3.8):
