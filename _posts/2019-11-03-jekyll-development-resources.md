@@ -9,13 +9,19 @@ description: >
   Jekyll development can be a challenge with limited documentation. Here are some resources to help you get started.
 ---
 
-## Jekyll Site
+- [Jekyll Site Development](#jekyll-site-development)
+  - [Jekyll Basics](#jekyll-basics)
+- [Jekyll Theme Development](#jekyll-themes-development)
+  - [Ceating a Jekyll Theme Gem](#jekyll-theme-gem)
+  - [Liquid](#liquid)
+
+## Jekyll Site Development
 
 ### Jekyll Basics
 
 - [Jekyll Cheatsheet](https://devhints.io/jekyll)
 
-## Jekyll Themes
+## Jekyll Themes Development
 
 ### Jekyll Theme Gem
 
