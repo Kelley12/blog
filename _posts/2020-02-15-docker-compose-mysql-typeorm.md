@@ -2,7 +2,7 @@
 title: "Access denied for user Error"
 author: bkelley
 layout: post
-date: 2019-02-15 12:45:42 -0600
+date: 2020-02-15 12:45:42 -0600
 categories: posts
 image: /assets/posts/docker-compose-mysql.png
 description: >
