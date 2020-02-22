@@ -4,7 +4,7 @@ author: bkelley
 layout: post
 date: 2020-02-22 08:08:00 -0600
 categories: posts
-image: /assets/posts/custom-error-message.png
+image: /assets/posts/custom-nuget-message.png
 description: >
   Cutom error when developer is missing company NuGet source
 ---
