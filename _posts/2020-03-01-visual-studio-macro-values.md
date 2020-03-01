@@ -2,11 +2,11 @@
 title: "Visual Studio Project Macro Values"
 author: bkelley
 layout: post
-date: 2020-02- 11:02:52 -0600
+date: 2020-03-01 08:55:52 -0600
 categories: posts
-image: /assets/posts/.png
+image: /assets/posts/viewing-macro-variables.png
 description: >
-  Two methods for finding the values of project macros
+  Two methods for viewing the values of project macros
 ---
 
 ## Viewing Current Marcro Values
