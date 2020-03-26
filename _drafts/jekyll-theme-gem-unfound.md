@@ -2,7 +2,7 @@
 title: "Jekyll Theme SASS Error"
 author: bkelley
 layout: post
-date: 2019-11-01 16:04:42 -0600
+date: 2020-0- 16:04:42 -0600
 categories: posts
 image: /assets/posts/jekyll-theme.png
 description: >

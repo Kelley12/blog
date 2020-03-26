@@ -2,7 +2,7 @@
 title: "Linux Imaging Center"
 author: bkelley
 layout: post
-date: 2019-- ::00 -0600
+date: 2020-0- ::00 -0600
 categories: posts
 image: /assets/posts/.png
 description: >
@@ -13,7 +13,7 @@ description: >
 
 ### Logic Supply PC
 
-1. Plug in a live Fedora USB [Or create a new one](/procedures/live-usb.html), into a fresh machine while it is powered off
+1. Plug in a live Fedora USB [Or create a new one](/posts/2020/03/08/fedora-live-usb.html), into a fresh machine while it is powered off
 2. Hold delete key and power the pc on
 3. Use the right arrow key to select the "Save and Exit" tab
 4. Under the boot override section highlight you're thumb drive using the up or down arrow key

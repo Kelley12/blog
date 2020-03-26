@@ -2,14 +2,14 @@
 title: "Fedora live USB"
 author: bkelley
 layout: post
-date: 2019-- ::00 -0600
+date: 2020-0- ::00 -0600
 categories: posts
-image: /assets/posts/.png
+image: /assets/posts/fedora-live-usb.png
 description: >
   Creating a Fedora live USB image
 ---
 
-## Fedora
+## Creating a Fedora live USB image on Mac
 
 1. [Download Fedora 64-bit live image](https://getfedora.org/en/workstation/download/)
 2. Attach USB drive to computer
