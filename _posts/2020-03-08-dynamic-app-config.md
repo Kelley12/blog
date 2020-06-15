@@ -76,7 +76,7 @@ The confiuration files should look like the following
 In the `.csproj` file, somehwere within the `<Project>` tag, add the following code:
 
 ```xml
-<UsingTask TaskName="TransformXml" AssemblyFiles="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+<UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
 <Target Name="App_config_AfterCompile" AfterTargets="AfterCompile" Condition="Exists('$(ProjectName).$(Configuration).config')">
 
     <!--Generate transformed app config in the intermediate directory-->
